@@ -1,3 +1,3 @@
 # codingChallenge
 
-one challenge every day
+One Challenge Every Day

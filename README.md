@@ -1,3 +1,3 @@
 # codingChallenge
 
-One Challenge Every Day
+Solve At least One Challenge per Day

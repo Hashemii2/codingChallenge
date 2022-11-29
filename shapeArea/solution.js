@@ -4,7 +4,7 @@ function shapeArea(n) {
   return Math.pow(n, 2) + Math.pow(n - 1, 2);
 }
 
-//but I want to write another solution step by step
+//but I want to write another solution that shows step by step what happened.
 
 function shapeArea(n) {
   let currentResult = 0;

@@ -1,3 +1,3 @@
 # codingChallenge
 
-Solve At least One Challenge per Day
+Solve At least One Challenge Per Day to Increase the Coding Skill.

@@ -1,7 +1,4 @@
 function boxesPacking(length, width, height) {
-  if (length.length == 1) return true;
-  if (length.every((num, i, arr) => num == arr[0])) return false;
-
   const matrix = Array.from({ length: width.length }, (_, idx) => [
     length[idx],
     width[idx],
@@ -11,14 +8,9 @@ function boxesPacking(length, width, height) {
     .sort((a, b) => b[0] - a[0]);
 
   return matrix.every((arr, idx) =>
-    matrix
-      .slice(idx, idx + 2)
-      .every((boxes, jdx1, arr1) =>
-        boxes.every(
-          (num, jdx2, arr2) =>
-            jdx1 == arr1.length - 1 || num > arr1[jdx1 + 1][jdx2]
-        )
-      )
+    arr.every(
+      (num, jdx) => idx == matrix.length - 1 || num > matrix[idx + 1][jdx]
+    )
   );
 }
 
